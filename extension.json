@@ -1,0 +1,5 @@
+{
+  "id": "layout-builder",
+  "name": "Layout Builder",
+  "srcdoc": "./examples/basic_with_blank_content.html"
+}
