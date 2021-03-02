@@ -6,7 +6,11 @@
     "description": "KEditor is a jQuery plugin which provides a content editor with drag n drop, configurable contents",
     "scripts": {
         "build": "webpack --prod",
-        "dev": "webpack --progress --color --watch"
+        "dev": "webpack --progress --color --watch",
+        "start": "contentful-extension-scripts start",
+        "buildnew": "contentful-extension-scripts build",
+        "prestart": "contentful extension update --src http://localhost:1234 --force",
+        "help": "contentful-extension-scripts help"
     },
     "repository": {
         "type": "git",
@@ -44,6 +48,7 @@
         "yargs": "^15.3.1"
     },
     "dependencies": {
+        "@contentful/contentful-extension-scripts": "^0.20.7",
         "publish-new-version": "^1.0.0"
     }
 }
